@@ -17,12 +17,13 @@ layer(base);
 @layer base {
     html {
         @apply antialiased font-body;
-        background: transparent;
+        height: 100%;
+        background: transparent !important;
     }
     body {
         @apply flex flex-col min-h-screen;
-        min-height: 100vh;
-        background: transparent;
+        height: 100%;
+        background: transparent !important;
     }
     body > div {
         @apply flex flex-col grow;
