@@ -26,10 +26,6 @@ const Page: React.FC<PageComponentProps> = (props) => {
                     return <meta key={metaTag.property} name={metaTag.property} content={metaTag.content} />;
                 })}
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <meta name="mobile-web-app-capable" content="yes" />
-                <meta name="apple-mobile-web-app-capable" content="yes" />
-                <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-                <meta name="theme-color" content="00000000" />
                 {site.favicon && <link rel="icon" href={site.favicon} />}
             </Head>
             <DynamicComponent {...props} />
