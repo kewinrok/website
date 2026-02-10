@@ -25,7 +25,7 @@ const Page: React.FC<PageComponentProps> = (props) => {
                     }
                     return <meta key={metaTag.property} name={metaTag.property} content={metaTag.content} />;
                 })}
-                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
                 {site.favicon && <link rel="icon" href={site.favicon} />}
             </Head>
             <DynamicComponent {...props} />
