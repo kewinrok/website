@@ -36,7 +36,7 @@ const BaseLayout: React.FC<BaseLayoutProps> = (props) => {
                 </Annotated>
             )}
         </div>
-        <script>
+        <script is:inline>
         function updateMetaThemeColor() {
     // 1. Hole die aktuelle Hintergrundfarbe vom Body (berechnet durch CSS Variablen)
     const bodyColor = getComputedStyle(document.body).backgroundColor;
